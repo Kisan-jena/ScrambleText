@@ -4,8 +4,18 @@ export default function Home() {
   return (
     <div className="flex min-h-svh justify-center bg-zinc-50 dark:bg-zinc-950 font-sans">
       <main className="flex flex-col w-full max-w-160 px-5 py-20 gap-6">
+        <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 cursor-default">
+          <ScrambleText delay={0}>
+            Hi, I&apos;m Kisan Jena. I am a dedicated Full Stack Developer with
+            a strong passion for engineering robust core backend systems and
+            crafting tasteful, highly interactive user interfaces and reusable
+            components. I strive to deliver professional, high-quality solutions
+            across the entire application stack.
+          </ScrambleText>
+        </p>
+
         <h1 className="text-3xl font-bold leading-tight cursor-default">
-          <ScrambleText delay={0}>Anime.js Scramble Text</ScrambleText>
+          <ScrambleText delay={0}>Scramble Text</ScrambleText>
         </h1>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 cursor-default">
           <ScrambleText delay={200}>
