@@ -1,5 +1,8 @@
 # Anime.js Scramble Text Clone in Next.js
 
+> 🍳 **Currently in the cooking phase!**
+> A lightweight, high-performance text scramble effect in React, inspired by Anime.js v4. Built natively for Next.js using Tailwind CSS for styling and Framer Motion's `useAnimationFrame` for optimized, 60fps DOM manipulation without heavy external animation plugins.
+
 This project is a React-based replica of Anime.js's text scramble effect, built natively for a modern Next.js stack without relying on heavy third-party animation libraries like GSAP or Anime.js itself for the core effect.
 
 ## Tech Stack & Libraries Used

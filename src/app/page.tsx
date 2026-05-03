@@ -5,10 +5,10 @@ export default function Home() {
     <div className="flex min-h-svh justify-center bg-zinc-50 dark:bg-zinc-950 font-sans">
       <main className="flex flex-col w-full max-w-160 px-5 py-20 gap-6">
         <h1 className="text-3xl font-bold leading-tight cursor-default">
-          <ScrambleText>Anime.js Scramble Text</ScrambleText>
+          <ScrambleText delay={0}>Anime.js Scramble Text</ScrambleText>
         </h1>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 cursor-default">
-          <ScrambleText>
+          <ScrambleText delay={200}>
             A lightweight text scramble effect built into anime.js v4. Hover
             over any element on this page to see the scramble animation in
             action.
@@ -16,7 +16,7 @@ export default function Home() {
         </p>
 
         <h2 className="text-xl font-bold leading-tight mt-4 cursor-default">
-          <ScrambleText>Features</ScrambleText>
+          <ScrambleText delay={400}>Features</ScrambleText>
         </h2>
 
         <ul className="flex flex-col gap-2 list-none pl-0">
@@ -35,16 +35,16 @@ export default function Home() {
               key={i}
               className="relative text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 pl-5 cursor-default before:content-['>'] before:absolute before:left-0 before:text-zinc-400 dark:before:text-zinc-500"
             >
-              <ScrambleText>{feature}</ScrambleText>
+              <ScrambleText delay={600 + i * 150}>{feature}</ScrambleText>
             </li>
           ))}
         </ul>
 
         <h2 className="text-xl font-bold leading-tight mt-4 cursor-default">
-          <ScrambleText>How It Works</ScrambleText>
+          <ScrambleText delay={2100}>How It Works</ScrambleText>
         </h2>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 cursor-default">
-          <ScrambleText>
+          <ScrambleText delay={2300}>
             The scrambleText helper returns a function-based tween value. Each
             target element gets its own closure that captures the original text
             content and computes a per-character reveal timeline. Characters
@@ -53,7 +53,7 @@ export default function Home() {
           </ScrambleText>
         </p>
         <p className="text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 cursor-default">
-          <ScrambleText>
+          <ScrambleText delay={2600}>
             The animation duration is automatically calculated from the text
             length and timing parameters, ensuring consistent visual pacing
             regardless of content size, or use the duration parameter to set an
